@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>My Portfolio</title>
+	<link rel="stylesheet" href="styles.css">
+
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+			background-color: rgb(17, 17, 59);
+			scroll-behavior: smooth;
+		}
+
+		.cover-photo {
+			width: 100%;
+			height: 300px;
+			background-image: url('e:\utilities\Dev. Tools\Visual Studio Code (2)\Images\CODE.jpg'); /* Replace with your cover photo */
+			background-size: cover;
+			background-position: center;
+		}
+
+		header {
+			background-color: #333;
+			color: white;
+			padding: 20px 0;
+			text-align: center;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			flex-direction: column;
+		}
+
+		header img {
+			width: 100px;
+			height: 100px;
+			border-radius: 50%;
+			margin-top: -50px; /* Adjusts the overlap with the cover photo */
+			border: 5px solid white; /* Optional: Add a border to the logo */
+		}
+
+		nav ul {
+			list-style: none;
+			padding: 0;
+			margin: 10px 0 0 0;
+		}
+
+		nav ul li {
+			display: inline;
+			margin: 0 15px;
+		}
+
+		nav ul li a {
+			color: rgb(255, 255, 255);
+			text-decoration: none;
+		}
+
+		section {
+			padding: 20px;
+			margin: 10px;
+			border: 1px solid #ddd;
+			background-color: #fff;
+			transition: background-color 0.3s ease;
+		}
+
+		section:hover {
+			background-color: yellow;
+		}
+
+		.project, .Skills {
+			border: 1px solid blue;
+			padding: 10px;
+			margin-bottom: 10px;
+		}
+
+		footer {
+			background-color: #333;
+			color: #fff;
+			text-align: center;
+			padding: 10px 0;
+		}
+
+		.img-section {
+			text-align: center;
+			margin: 20px 0;
+		}
+
+		.img-section img {
+			max-width: 100%;
+			height: auto;
+			border: 1px solid #ddd;
+			border-radius: 10px;
+		}
+
+		.img-section p {
+			font-size: 30px;
+			color: #000000;
+		}
+	</style>
+</head>
+<body>
+	<div class="cover-photo"></div>
+
+	<header>
+		<img src="C:\Users\vkkca\OneDrive\Pictures\Me.jpg" alt="Your Profile Picture">
+		<h1>Von Eiron S. Canete</h1>
+	</header>
+
+	<nav>
+		<ul>
+			<li><a href="#about">About</a></li>
+			<li><a href="#Skills">Skills</a></li>
+			<li><a href="#Sample">Sample</a></li>
+			<li><a href="#contact">Contact</a></li>
+		</ul>
+	</nav>
+
+	<section id="about">
+		<h2>About Me</h2>
+		<p>Von Eiron Salazar Canete</p>
+		<p>19 Years old</p>
+		<p>Callifornia</p>
+		<p>09164086619</p>
+		<p>vkkcanete@gmail.com</p>
+		<h2>In case of emergency please contact</h2>
+		<p>david rendon juan: 092738463628</p>
+	</section>
+
+	<section id="Skills">
+		<h2>Skills</h2>
+		<div class="project">
+			<h3>Fast Learner</h3>
+			<p>I'm a fast learner in various scenarios like problem-solving and learning new programming languages, and I am well engaged in helping others and supporting my team.</p>
+		</div>
+		<div class="Skills">
+			<h3>Basic Knowledge in Front-End Development</h3>
+			<p>I have a solid foundation in web development, with experience in HTML, CSS, and JavaScript. While I am proficient in these technologies, I am committed to continuously expanding my skill set and staying updated with the latest advancements in the field. I am eager to learn new programming languages, frameworks, and tools that will enable me to create even more dynamic and efficient web applications.</p>
+		</div>
+	</section>
+
+	<section id="Sample" class="img-section">
+		<h2>"Samples of Codes"</h2>
+		<img src="C:\Users\vkkca\Downloads\CODRS.png" alt="bla">
+		<p>This is some highlights of my codes.</p>
+	</section>
+
+	<section id="contact">
+		<h2>Contact me if you have any concerns regarding me</h2>
+		<h3>Or direct email me in: vkkcanete@gmail.com</h3>
+		<form id="contact-form">
+			<label for="name">Name:</label>
+			<input type="text" id="name" name="name" required>
+
+			<label for="email">Email:</label>
+			<input type="email" id="email" name="email" required>
+
+			<label for="message">Message:</label>
+			<textarea id="message" name="message" required></textarea>
+
+			<button type="submit">Send</button>
+		</form>
+	</section>
+
+	<footer>
+		<p>2024 My Portfolio. All rights reserved.</p>
+	</footer>
+
+	<script>
+		document.addEventListener('DOMContentLoaded', function() {
+			const form = document.getElementById('contact-form');
+			form.addEventListener('submit', function(event) {
+				event.preventDefault();
+				alert('Form submitted!');
+			});
+		});
+	</script>
+</body>
+</html>
+
